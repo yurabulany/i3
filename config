@@ -66,7 +66,7 @@ exec --no-startup-id flatpak run io.github.mimbrero.WhatsAppDesktop
 exec --no-startup-id flatpak run org.telegram.desktop
 
 #start thunderbird
-exec --no-startup-id flatpak run org.mozilla.thunderbird
+exec --no-startup-id thunderbird
 
 #start bitwarden
 # exec --no-startup-id flatpak run com.bitwarden.desktop
@@ -241,7 +241,7 @@ assign [class="org.gnome.Nautilus"] $ws4
 assign [class="Gnome-terminal"] $ws6
 # assign [class="Slack"] $ws5
 assign [class="whatsapp-desktop-linux"] $ws5
-assign [class="org.mozilla.thunderbird"] $ws3
+assign [class="thunderbird"] $ws3
 assign [class="TelegramDesktop"] $ws5
 
 # reload the configuration file
@@ -286,6 +286,8 @@ exec --no-startup-id /usr/bin/dunst
 
 #floating rules
 for_window [class="gnome-calculator"] floating enable
+for_window [class="VirtualBox Manager"] floating enable
+for_window [class="VirtualBox Maschine"] floating enable
 
 # change the keyboard layout
 # exec_always "setxkbmap -option 'grp:alt_shift_toggle' -layout us,ru"
